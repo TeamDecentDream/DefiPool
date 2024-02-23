@@ -237,7 +237,11 @@ contract UniswapV3NFTManager is ERC721 {
         totalSupply--;
     }
 
-    
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // CALLBACKS
+    //
+    ////////////////////////////////////////////////////////////////////////////
     function uniswapV3MintCallback(
         uint256 amount0,
         uint256 amount1,
@@ -252,6 +256,11 @@ contract UniswapV3NFTManager is ERC721 {
         IERC20(extra.token1).transferFrom(extra.payer, msg.sender, amount1);
     }
 
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // INTERNAL
+    //
+    ////////////////////////////////////////////////////////////////////////////
     struct AddLiquidityInternalParams {
         IUniswapV3Pool pool;
         int24 lowerTick;

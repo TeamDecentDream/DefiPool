@@ -631,7 +631,11 @@ contract UniswapV3Pool is IUniswapV3Pool {
         }
     }
 
-    
+    ////////////////////////////////////////////////////////////////////////////
+    //
+    // INTERNAL
+    //
+    ////////////////////////////////////////////////////////////////////////////
     function balance0() internal returns (uint256 balance) {
         balance = IERC20(token0).balanceOf(address(this));
     }

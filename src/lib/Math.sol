@@ -32,6 +32,7 @@ library Math {
         }
     }
 
+    /// @notice Calculates amount1 delta between two prices
     function calcAmount1Delta(
         uint160 sqrtPriceAX96,
         uint160 sqrtPriceBX96,
@@ -56,6 +57,7 @@ library Math {
         }
     }
 
+    /// @notice Calculates amount0 delta between two prices
     function calcAmount0Delta(
         uint160 sqrtPriceAX96,
         uint160 sqrtPriceBX96,
@@ -80,6 +82,7 @@ library Math {
             );
     }
 
+    /// @notice Calculates amount1 delta between two prices
     function calcAmount1Delta(
         uint160 sqrtPriceAX96,
         uint160 sqrtPriceBX96,
@@ -131,6 +134,7 @@ library Math {
         uint256 numerator = uint256(liquidity) << FixedPoint96.RESOLUTION;
         uint256 product = amountIn * sqrtPriceX96;
 
+        // If product doesn't overflow, use the precise formula.
         if (product / amountIn == sqrtPriceX96) {
             uint256 denominator = numerator + product;
             if (denominator >= numerator) {
@@ -141,6 +145,7 @@ library Math {
             }
         }
 
+        // If product overflows, use a less precise formula.
         return
             uint160(
                 divRoundingUp(numerator, (numerator / sqrtPriceX96) + amountIn)
