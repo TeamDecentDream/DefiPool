@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Solmate (https://github.com/Rari-Capital/solmate/blob/main/src/tokens/ERC721.sol)",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "A generic interface for a contract which properly accepts ERC721 tokens.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"scripts/DeployDevelopment.s.flattened.sol": "ERC721TokenReceiver"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": [
+			":abdk-math/=lib/abdk-libraries-solidity/\r",
+			":bytes-utils/=lib/solidity-bytes-utils/contracts/\r",
+			":ds-test/=lib/forge-std/lib/ds-test/src/\r",
+			":forge-std/=lib/forge-std/src/\r",
+			":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+			":prb-math/=lib/prb-math/contracts/\r"
+		]
+	},
+	"sources": {
+		"scripts/DeployDevelopment.s.flattened.sol": {
+			"keccak256": "0xeffd461ea535dd50401b181b1407b318c40f0c2043960f9505e7bcd1e93923b9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9b86aab11e072c37f694f473890e04e4e29d0947c31d8d074273734eeb0fcb0d",
+				"dweb:/ipfs/QmRJQzpaE44T8Ltw7hDVujU5xMMbbfKSxn5LSNjSQQk3At"
+			]
+		}
+	},
+	"version": 1
+}

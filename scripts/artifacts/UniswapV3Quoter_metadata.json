@@ -1,0 +1,190 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "factory_",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "path",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					}
+				],
+				"name": "quote",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160[]",
+						"name": "sqrtPriceX96AfterList",
+						"type": "uint160[]"
+					},
+					{
+						"internalType": "int24[]",
+						"name": "tickAfterList",
+						"type": "int24[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "tokenIn",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "tokenOut",
+								"type": "address"
+							},
+							{
+								"internalType": "uint24",
+								"name": "fee",
+								"type": "uint24"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amountIn",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint160",
+								"name": "sqrtPriceLimitX96",
+								"type": "uint160"
+							}
+						],
+						"internalType": "struct UniswapV3Quoter.QuoteSingleParams",
+						"name": "params",
+						"type": "tuple"
+					}
+				],
+				"name": "quoteSingle",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOut",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceX96After",
+						"type": "uint160"
+					},
+					{
+						"internalType": "int24",
+						"name": "tickAfter",
+						"type": "int24"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "amount0Delta",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "amount1Delta",
+						"type": "int256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "uniswapV3SwapCallback",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"scripts/DeployDevelopment.s.flattened.sol": "UniswapV3Quoter"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": [
+			":abdk-math/=lib/abdk-libraries-solidity/\r",
+			":bytes-utils/=lib/solidity-bytes-utils/contracts/\r",
+			":ds-test/=lib/forge-std/lib/ds-test/src/\r",
+			":forge-std/=lib/forge-std/src/\r",
+			":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+			":prb-math/=lib/prb-math/contracts/\r"
+		]
+	},
+	"sources": {
+		"scripts/DeployDevelopment.s.flattened.sol": {
+			"keccak256": "0xeffd461ea535dd50401b181b1407b318c40f0c2043960f9505e7bcd1e93923b9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9b86aab11e072c37f694f473890e04e4e29d0947c31d8d074273734eeb0fcb0d",
+				"dweb:/ipfs/QmRJQzpaE44T8Ltw7hDVujU5xMMbbfKSxn5LSNjSQQk3At"
+			]
+		}
+	},
+	"version": 1
+}

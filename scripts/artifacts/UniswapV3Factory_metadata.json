@@ -1,0 +1,219 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "PoolAlreadyExists",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "TokensMustBeDifferent",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "UnsupportedFee",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ZeroAddressNotAllowed",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token0",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"name": "PoolCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenX",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenY",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"name": "createPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"name": "fees",
+				"outputs": [
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "parameters",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "factory",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token0",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "tickSpacing",
+						"type": "uint24"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"name": "pools",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"scripts/DeployDevelopment.s.flattened.sol": "UniswapV3Factory"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": [
+			":abdk-math/=lib/abdk-libraries-solidity/\r",
+			":bytes-utils/=lib/solidity-bytes-utils/contracts/\r",
+			":ds-test/=lib/forge-std/lib/ds-test/src/\r",
+			":forge-std/=lib/forge-std/src/\r",
+			":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+			":prb-math/=lib/prb-math/contracts/\r"
+		]
+	},
+	"sources": {
+		"scripts/DeployDevelopment.s.flattened.sol": {
+			"keccak256": "0xeffd461ea535dd50401b181b1407b318c40f0c2043960f9505e7bcd1e93923b9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9b86aab11e072c37f694f473890e04e4e29d0947c31d8d074273734eeb0fcb0d",
+				"dweb:/ipfs/QmRJQzpaE44T8Ltw7hDVujU5xMMbbfKSxn5LSNjSQQk3At"
+			]
+		}
+	},
+	"version": 1
+}

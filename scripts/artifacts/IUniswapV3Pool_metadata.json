@@ -1,0 +1,356 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int24",
+						"name": "lowerTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "int24",
+						"name": "upperTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount",
+						"type": "uint128"
+					}
+				],
+				"name": "burn",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "int24",
+						"name": "lowerTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "int24",
+						"name": "upperTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount0Requested",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount1Requested",
+						"type": "uint128"
+					}
+				],
+				"name": "collect",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "amount0",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount1",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "int24",
+						"name": "lowerTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "int24",
+						"name": "upperTick",
+						"type": "int24"
+					},
+					{
+						"internalType": "uint128",
+						"name": "amount",
+						"type": "uint128"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "mint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "key",
+						"type": "bytes32"
+					}
+				],
+				"name": "positions",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "liquidity",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeGrowthInside0LastX128",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "feeGrowthInside1LastX128",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint128",
+						"name": "tokensOwed0",
+						"type": "uint128"
+					},
+					{
+						"internalType": "uint128",
+						"name": "tokensOwed1",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "slot0",
+				"outputs": [
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceX96",
+						"type": "uint160"
+					},
+					{
+						"internalType": "int24",
+						"name": "tick",
+						"type": "int24"
+					},
+					{
+						"internalType": "uint16",
+						"name": "observationIndex",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "observationCardinality",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "observationCardinalityNext",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "zeroForOne",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountSpecified",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint160",
+						"name": "sqrtPriceLimitX96",
+						"type": "uint160"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "swap",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tickSpacing",
+				"outputs": [
+					{
+						"internalType": "uint24",
+						"name": "",
+						"type": "uint24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token0",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"scripts/DeployDevelopment.s.flattened.sol": "IUniswapV3Pool"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": [
+			":abdk-math/=lib/abdk-libraries-solidity/\r",
+			":bytes-utils/=lib/solidity-bytes-utils/contracts/\r",
+			":ds-test/=lib/forge-std/lib/ds-test/src/\r",
+			":forge-std/=lib/forge-std/src/\r",
+			":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+			":prb-math/=lib/prb-math/contracts/\r"
+		]
+	},
+	"sources": {
+		"scripts/DeployDevelopment.s.flattened.sol": {
+			"keccak256": "0xeffd461ea535dd50401b181b1407b318c40f0c2043960f9505e7bcd1e93923b9",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://9b86aab11e072c37f694f473890e04e4e29d0947c31d8d074273734eeb0fcb0d",
+				"dweb:/ipfs/QmRJQzpaE44T8Ltw7hDVujU5xMMbbfKSxn5LSNjSQQk3At"
+			]
+		}
+	},
+	"version": 1
+}
